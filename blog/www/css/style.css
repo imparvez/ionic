@@ -1,0 +1,6 @@
+/* Empty. Add your own CSS if you like */
+.bar.bar-balanced.bar-footer {
+	background: #333338 !important;
+}
+
+ion-content.scroll-content { top: 88px; }
