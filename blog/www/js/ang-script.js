@@ -10,7 +10,7 @@ angular.module('myBlog', ['ionic','ngRoute'])
   })
 })
 
-.controller('myBlogListController',['$scope', '$log', function($scope, $log){
+.controller('myBlogListController', function($scope){
   $scope.items = [
     { 
       id: 1,
@@ -27,5 +27,5 @@ angular.module('myBlog', ['ionic','ngRoute'])
       image: 'http://lorempixel.com/200/200/' 
     }
   ];
-}])
+})
 
