@@ -10,22 +10,25 @@ angular.module('myBlog', ['ionic','ngRoute'])
   })
 })
 
-.controller('myBlogListController', function($scope){
-  $scope.items = [
-    { 
-      id: 1,
-      blogName: 'blog-one',
-      album: 'Gotta Be Somebody', 
-      artist: 'Nickelback', 
-      image: 'http://lorempixel.com/200/200/' 
-    },
-    { 
-      id: 2,
-      blogName: 'blog-two',
-      album: 'Dark Horse', 
-      artist: 'Nickelback', 
-      image: 'http://lorempixel.com/200/200/' 
-    }
-  ];
-})
+.controller('myBlogListController', ['$scope', '$http', function($scope, $http){
+  $http.get('js/blogList.json').then(function(response){
+    $scope.blogList = response.data;
+  })
+  // $scope.items = [
+  //   { 
+  //     id: 1,
+  //     blogName: 'blog-one',
+  //     album: 'Gotta Be Somebody', 
+  //     artist: 'Nickelback', 
+  //     image: 'http://lorempixel.com/200/200/' 
+  //   },
+  //   { 
+  //     id: 2,
+  //     blogName: 'blog-two',
+  //     album: 'Dark Horse', 
+  //     artist: 'Nickelback', 
+  //     image: 'http://lorempixel.com/200/200/' 
+  //   }
+  // ];
+}])
 

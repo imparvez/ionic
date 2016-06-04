@@ -1,0 +1,16 @@
+[
+	{
+		"id": 1,
+		"blogName": "blog-one",
+		"album": "Gotta Be Somebody",
+		"artist": "Nickelback",
+		"image": "http://lorempixel.com/200/200/"
+	},
+	{
+		"id": 2,
+		"blogName": "blog-two",
+		"album": "Dark Horse",
+		"artist": "Nickelback",
+		"image": "http://lorempixel.com/200/200/"
+	}
+]

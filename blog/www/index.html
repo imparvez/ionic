@@ -17,11 +17,6 @@
 
     <!-- cordova script (this will be a 404 during development) -->
     <script src="cordova.js"></script>
-
-    <!-- your app's js -->
-    <script src="js/app.js"></script>
-    <script src="js/controllers.js"></script>
-    <script src="js/services.js"></script>
   </head>
   <body ng-controller="myBlogListController">
   <!--Header Tab-->
@@ -36,7 +31,7 @@
   <!--List Items-->
   <ion-content>
     <div class="list">
-      <a ng-repeat="item in items" 
+      <a ng-repeat="item in blogList" 
          href="/{{item.blogName}}"
          class="item item-thumbnail-left">
         <img ng-src="{{ item.image }}">
@@ -45,7 +40,7 @@
       </a>
     </div>
   </ion-content>
-  
+
   <!--Footer Tab-->
   <div class="bar bar-footer bar-balanced">
     <div class="title">Copyright @2016</div>
