@@ -18,26 +18,20 @@
     <!-- cordova script (this will be a 404 during development) -->
     <script src="cordova.js"></script>
   </head>
-  <body ng-controller="myBlogListController">
+  <body ng-controller="myBlogDetailsController">
   <!--Header Tab-->
   <div class="bar bar-header bar-assertive">
     <h1 class="title">BookMyShow</h1>
   </div>
   <!--Sub Header-->
   <div class="bar bar-subheader">
-    <h2 class="title">Entertainment News</h2>
+    <h2 class="title">DETAILS</h2>
   </div>
 
   <!--List Items-->
   <ion-content>
     <div class="list">
-      <a ng-repeat="item in blogList" 
-         href="#/route/{{item.id}}"
-         class="item item-thumbnail-left">
-        <img ng-src="{{ item.image }}">
-        <h2>{{ item.album }}</h2>
-        <h4>{{ item.artist }}</h4>
-      </a>
+      <div ng-view></div>
     </div>
   </ion-content>
 
